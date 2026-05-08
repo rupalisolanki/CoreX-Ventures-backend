@@ -120,3 +120,20 @@
 {"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 13:38:35"}
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-08 13:45:05"}
 {"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 13:45:05"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-08 14:16:13"}
+{"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 14:16:13"}
+{"level":"info","message":"MongoDB reconnected","timestamp":"2026-05-08 17:55:45"}
+{"level":"info","message":"MongoDB reconnected","timestamp":"2026-05-08 17:55:45"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:03:47"}
+{"level":"warn","message":"MongoDB connection failed. Retrying in 5s... (5 attempts left)","timestamp":"2026-05-08 18:03:47"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:04:22"}
+{"level":"warn","message":"MongoDB connection failed. Retrying in 5s... (4 attempts left)","timestamp":"2026-05-08 18:04:22"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:04:57"}
+{"level":"warn","message":"MongoDB connection failed. Retrying in 5s... (3 attempts left)","timestamp":"2026-05-08 18:04:57"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:05:32"}
+{"level":"warn","message":"MongoDB connection failed. Retrying in 5s... (2 attempts left)","timestamp":"2026-05-08 18:05:32"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:06:07"}
+{"level":"warn","message":"MongoDB connection failed. Retrying in 5s... (1 attempts left)","timestamp":"2026-05-08 18:06:07"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:06:42"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-08 18:13:03"}
+{"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 18:13:03"}
