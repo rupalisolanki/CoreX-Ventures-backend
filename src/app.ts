@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 import mongoSanitize from 'express-mongo-sanitize';
 import hpp from 'hpp';
 import rateLimit from 'express-rate-limit';
+import compression from 'compression';
 import path from 'path';
 
 import { config } from './config/env';
@@ -14,11 +15,17 @@ import authRoutes from './routes/authRoutes';
 import contactRoutes from './routes/contactRoutes';
 import inquiryRoutes from './routes/inquiryRoutes';
 import newsletterRoutes from './routes/newsletterRoutes';
+import healthRoutes from "./routes/healthRoutes";
+
 
 const app = express();
 
+//health check route
+app.use('/api/v1/health', healthRoutes);
+
 // Security
 app.use(helmet());
+app.use(compression());
 app.use(cors({ origin: config.clientUrl, credentials: true }));
 app.use(mongoSanitize());
 app.use(hpp());
@@ -40,12 +47,12 @@ if (config.env !== 'test') app.use(morgan(config.env === 'development' ? 'dev' :
 app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/contacts', contactRoutes);
-app.use('/api/inquiries', inquiryRoutes);
-app.use('/api/newsletter', newsletterRoutes);
+app.use('/api/v1/auth', authRoutes);
+app.use('/api/v1/contacts', contactRoutes);
+app.use('/api/v1/inquiries', inquiryRoutes);
+app.use('/api/v1/newsletter', newsletterRoutes);
 
-app.get('/api/health', (_req, res) => res.json({ success: true, message: 'CoreX Ventures API running' }));
+app.get('/api/v1/health', (_req, res) => res.json({ success: true, message: 'CoreX Ventures API running' }));
 
 // 404
 app.all('*', (req, _res, next) => next(new AppError(`Route ${req.originalUrl} not found`, 404)));
