@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/hp/rups-personal/CoreX-Ventures-backend/logs/.8d9d43c5755426b166af18ae34c985909e4418bf-audit.json",
+    "files": [
+        {
+            "date": 1778216748497,
+            "name": "/home/hp/rups-personal/CoreX-Ventures-backend/logs/error-2026-05-08.log",
+            "hash": "1624c3294c8e64137de867f1d2f3ad5a018474f89f198a33e3335c4d947ed5ca"
+        }
+    ],
+    "hashType": "sha256"
+}
