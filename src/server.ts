@@ -1,3 +1,10 @@
+// Temporary debug - remove after fix
+console.log('ENV CHECK:', {
+  MONGODB_URI: process.env.MONGODB_URI ? 'SET' : 'MISSING',
+  JWT_SECRET: process.env.JWT_SECRET ? 'SET' : 'MISSING',
+  NODE_ENV: process.env.NODE_ENV,
+  PORT: process.env.PORT,
+});
 import { config } from './config/env';
 import { connectDB } from './config/database';
 import { logger } from './utils/logger';
