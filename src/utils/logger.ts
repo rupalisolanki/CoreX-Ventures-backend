@@ -23,20 +23,18 @@ export const logger = winston.createLogger({
   level: process.env.NODE_ENV === 'production' ? 'info' : 'debug',
   format: fmt,
   transports: [
+    new winston.transports.Console({
+      format: winston.format.combine(winston.format.colorize(), winston.format.simple()),
+    }),
     new DailyRotateFile({ ...rotateOpts('error'), level: 'error' }),
     new DailyRotateFile(rotateOpts('combined')),
   ],
   exceptionHandlers: [
+    new winston.transports.Console(),
     new DailyRotateFile(rotateOpts('exceptions')),
   ],
   rejectionHandlers: [
+    new winston.transports.Console(),
     new DailyRotateFile(rotateOpts('rejections')),
   ],
 });
-
-logger.add(new winston.transports.Console({
-  format: winston.format.combine(
-    winston.format.colorize(),
-    winston.format.simple()
-  ),
-}));
