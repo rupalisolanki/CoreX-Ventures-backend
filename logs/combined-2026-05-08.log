@@ -137,3 +137,9 @@
 {"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 18:06:42"}
 {"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-08 18:13:03"}
 {"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 18:13:03"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-08 18:29:13"}
+{"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 18:29:13"}
+{"level":"info","message":"MongoDB connected successfully","timestamp":"2026-05-08 19:54:25"}
+{"level":"info","message":"CoreX Ventures API running on port 5000 [development]","timestamp":"2026-05-08 19:54:25"}
+{"level":"warn","message":"MongoDB disconnected","timestamp":"2026-05-08 19:56:03"}
+{"level":"info","message":"MongoDB reconnected","timestamp":"2026-05-08 19:56:03"}

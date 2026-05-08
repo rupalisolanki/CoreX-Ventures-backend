@@ -9,7 +9,7 @@ if (!fs.existsSync('uploads')) fs.mkdirSync('uploads');
 
 const start = async (): Promise<void> => {
   await connectDB();
-  app.listen(config.port, () => {
+  app.listen(config.port, '0.0.0.0', () => {
     logger.info(`CoreX Ventures API running on port ${config.port} [${config.env}]`);
   });
 };
