@@ -38,4 +38,4 @@ tmp/
 temp/
 
 # Uploads
-uploads/
+uploads/node_modules/
